@@ -29,7 +29,7 @@ class DataBase{
             $statement = $this->connection->prepare($querry);
             $statement->execute($values);
             return $statement;
-        }catch(PDOExcption $e){
+        }catch(PDOExecption $e){
             die('ERROR: '.$e->getMessage());
         }
     }
